@@ -125,7 +125,7 @@ WebApp->>Employer: Display candidate readiness
 Shows the **candidate pipeline and interview status**.
 
 ### What it shows
-
+    
 * Total candidates
 * Calls completed
 * Calls in progress
