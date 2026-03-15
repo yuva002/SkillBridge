@@ -91,6 +91,33 @@ ResultsDB --> WebApp
 
 ---
 
+# System Architecture
+
+```mermaid
+sequenceDiagram
+
+participant Employer
+participant WebApp
+participant Backend
+participant Bolna
+participant Candidate
+
+Employer->>WebApp: Upload job role
+WebApp->>Backend: Create interview session
+Backend->>Bolna: Trigger outbound call
+
+Bolna->>Candidate: Phone interview begins
+Candidate->>Bolna: Answers questions
+
+Bolna->>Backend: Send webhook with results
+Backend->>Backend: Process scoring logic
+
+Backend->>WebApp: Store interview report
+WebApp->>Employer: Display candidate readiness
+```
+
+---
+
 # Employer Dashboard
 
 ![Employer Dashboard](image.png)
