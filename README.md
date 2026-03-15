@@ -91,7 +91,7 @@ ResultsDB --> WebApp
 
 ---
 
-# System Architecture
+# End-to-End Flow Diagram
 
 ```mermaid
 sequenceDiagram
