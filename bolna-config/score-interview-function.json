@@ -1,0 +1,77 @@
+{
+  "name": "score_interview",
+  "description": "Call this function immediately after the candidate has answered all 4 mock interview questions. Use this to score their overall interview performance based on the conversation so far. This function evaluates their answers and returns a score, grade, and coaching tips. Always call this before giving the candidate their feedback summary.",
+  "pre_call_message": "Acha, ek second ruko — main aapke jawab note kar rahi hoon. Please hold.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "candidate_name": {
+        "type": "string",
+        "description": "Full name of the candidate being interviewed"
+      },
+      "job_role": {
+        "type": "string",
+        "description": "The job role the candidate is being interviewed for, e.g., Electrician, HVAC Technician, Delivery Driver"
+      },
+      "q1_answer_quality": {
+        "type": "string",
+        "description": "Assess the quality of the candidate's answer to question 1 (experience). Values: excellent, good, average, poor"
+      },
+      "q2_answer_quality": {
+        "type": "string",
+        "description": "Assess the quality of the candidate's answer to question 2 (safety/compliance). Values: excellent, good, average, poor"
+      },
+      "q3_answer_quality": {
+        "type": "string",
+        "description": "Assess the quality of the candidate's answer to question 3 (problem-solving). Values: excellent, good, average, poor"
+      },
+      "q4_answer_quality": {
+        "type": "string",
+        "description": "Assess the quality of the candidate's answer to question 4 (professional conduct). Values: excellent, good, average, poor"
+      },
+      "candidate_confidence": {
+        "type": "string",
+        "description": "Overall confidence level shown by the candidate during the call. Values: high, medium, low"
+      },
+      "language_used": {
+        "type": "string",
+        "description": "Primary language used by the candidate. Values: hindi, english, hinglish"
+      },
+      "call_sid": {
+        "type": "string",
+        "description": "The unique call ID for this session"
+      }
+    },
+    "required": [
+      "candidate_name",
+      "job_role",
+      "q1_answer_quality",
+      "q2_answer_quality",
+      "q3_answer_quality",
+      "q4_answer_quality",
+      "candidate_confidence",
+      "language_used",
+      "call_sid"
+    ]
+  },
+  "key": "custom_task",
+  "value": {
+    "method": "POST",
+    "param": {
+      "candidate_name": "%(candidate_name)s",
+      "job_role": "%(job_role)s",
+      "q1_answer_quality": "%(q1_answer_quality)s",
+      "q2_answer_quality": "%(q2_answer_quality)s",
+      "q3_answer_quality": "%(q3_answer_quality)s",
+      "q4_answer_quality": "%(q4_answer_quality)s",
+      "candidate_confidence": "%(candidate_confidence)s",
+      "language_used": "%(language_used)s",
+      "call_sid": "%(call_sid)s"
+    },
+    "url": "https://YOUR_BACKEND_URL/api/score-interview",
+    "api_token": "Bearer YOUR_SECRET_API_KEY",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

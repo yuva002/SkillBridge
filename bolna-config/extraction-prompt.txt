@@ -1,0 +1,11 @@
+candidate_name : Extract the full name of the candidate being coached
+job_role : Extract the job role they are being prepared for (e.g. Electrician, Delivery Driver)
+employer_name : Extract the employer or company name mentioned
+overall_readiness : Based on the conversation, rate their job readiness as: ready, almost_ready, needs_work
+key_strength : Extract the single strongest quality the candidate demonstrated (1 sentence)
+main_weakness : Extract the biggest area the candidate needs to improve (1 sentence)
+language_preference : Extract the language they primarily spoke in: hindi, english, or hinglish
+call_completed : Did the candidate complete all 4 questions? yes or no
+candidate_sentiment : How did the candidate seem emotionally during the call: confident, nervous, enthusiastic, disengaged
+coaching_tip_1 : First specific coaching tip to tell the candidate before their real interview
+coaching_tip_2 : Second specific coaching tip to tell the candidate before their real interview

@@ -1,0 +1,94 @@
+# =========================
+# Node modules
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Build outputs
+# =========================
+build/
+out/
+.next/
+
+# =========================
+# Vite
+# =========================
+.vite/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+debug.log*
+error.log*
+
+# =========================
+# Runtime files
+# =========================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# Dependency directories
+# =========================
+jspm_packages/
+
+# =========================
+# Optional npm cache
+# =========================
+.npm
+.cache
+
+# =========================
+# IDE files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Coverage reports
+# =========================
+coverage/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+
+# =========================
+# Deployment
+# =========================
+.vercel
+.railway
+.render
+
+
+
+# =========================
+# Screenshots (optional)
+# =========================
+# remove this if you want to track screenshots
+# screenshots/*.png
