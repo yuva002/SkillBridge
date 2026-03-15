@@ -120,7 +120,7 @@ WebApp->>Employer: Display candidate readiness
 
 # Employer Dashboard
 
-![Employer Dashboard](image.png)
+![Employer Dashboard](https://github.com/yuva002/SkillBridge/blob/main/employeedashboard.png)
 
 Shows the **candidate pipeline and interview status**.
 
@@ -138,7 +138,7 @@ Employers can monitor **all candidates in one place**.
 
 # Add Candidate Page
 
-![Add Candidate](image.png)
+![Add Candidate](https://github.com/yuva002/SkillBridge/blob/main/addcandidate.png)
 
 Employers register candidates for **voice coaching calls**.
 
@@ -165,7 +165,7 @@ Detailed **coaching report** generated after the AI call.
 
 This helps employers **quickly evaluate job readiness**.
 
-![Interview Results](image.png)
+![Interview Results](https://github.com/yuva002/SkillBridge/blob/main/results.png)
 
 ---
 
